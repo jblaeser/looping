@@ -25,10 +25,16 @@ var churchillSpeech = {
 
 
 
-i = 0;
+    i = 0;
+    var numberOnPage = "first";
 
 while (i < speechesArray.length) {
-  console.log("This speech is written by " + speechesArray[i].author);
+  if (i === 1){
+    numberOnPage = "second";
+  } else if (i === 2){
+    numberOnPage = "third";
+  };
+  console.log("The " + numberOnPage + " speech is written by " + speechesArray[i].author);
   i++;
 };
 
@@ -70,8 +76,6 @@ document.getElementById('BtnChurchill').addEventListener('click', function(){
   } else {
     console.log("This speech is neither the oldest nor the most recent on the page. Juuuuust right, Goldilocks.");
   };
-
-
 });
 
 document.getElementById('BtnGhandi').addEventListener('click', function(){
@@ -91,8 +95,6 @@ document.getElementById('BtnGhandi').addEventListener('click', function(){
   } else {
     console.log("This speech is neither the oldest nor the most recent on the page. Juuuuust right, Goldilocks.");
   };
-
-
 });
 
 document.getElementById('BtnDemosthenes').addEventListener('click', function(){
@@ -112,7 +114,5 @@ document.getElementById('BtnDemosthenes').addEventListener('click', function(){
   } else {
     console.log("This speech is neither the oldest nor the most recent on the page. Juuuuust right, Goldilocks.");
   };
-
-
 });
 
