@@ -34,7 +34,7 @@ while (i < speechesArray.length) {
   } else if (i === 2){
     numberOnPage = "third";
   };
-  console.log("The " + numberOnPage + " speech is written by " + speechesArray[i].author);
+  console.log("The " + numberOnPage + " speech on the page was written by " + speechesArray[i].author);
   i++;
 };
 
